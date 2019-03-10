@@ -1,0 +1,17 @@
+/*============================resrt=========================*/
+body{ font-size:12px; font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif;color:#fff;background:#fff;}
+html, body, div, span, h1, h2, h3, h4, h5, h6, em, img, strong, sub, sup, tt,dd, dl, dt, form, label, table, caption, tbody, tfoot, thead, tr, th, td,ul,li,p,a{ margin: 0; padding: 0;  }
+input,select,textarea{ vertical-align:middle;}
+h1,h2,h3,h4,h5,h6,strong{font-weight: normal;font-size: 100%;}
+ul,li{ list-style-type:none;}.clear {clear: both;}em{font-style: normal;}img{ border:0;}
+a:link,a:visited{text-decoration:none;color:#643B0E;}
+a:hover{/*text-decoration:underline;*/color:#4F1B0A;}
+.fl{float: left;}.fr{float: right;}
+input[type="text"],input[type="password"],textarea{text-indent: 5px;outline: 0 none;}
+.ml10{margin-left: 10px;}
+.mr10{margin-right: 10px;}
+.mt10{margin-top: 10px;}
+.dnone{display: none;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;*zoom:1;}.clearfix{zoom:1;}
+*html .clearfix{height:1%;}
+/*===========================resrt-end=======================*/
