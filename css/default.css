@@ -57,8 +57,8 @@
 /* navbar */
 .zyh-navbar{
 	margin: 0;
-	background: transparent;
 	border: none;
+	padding: 0 10px;
 }
 .zyh-navbar .navbar-nav>li>a {
 	font-size: 16px;
