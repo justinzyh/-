@@ -4,7 +4,7 @@ $(function() {
 		dots: true,
 		centerMode: true,
 		slidesToShow: 1,
-		centerPadding: '120px',
+		centerPadding: '0px',
 		autoplay: false,
 		autoplaySpeed: 3000,
 		draggable: false

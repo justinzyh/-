@@ -148,13 +148,20 @@
 /* slide */
 .sliderImg {
     max-height: 300px;
+	padding: 0;
 }
 .slick-initialized .slick-slide {
     overflow: hidden;
 	background-color: #f1f1f1;
 }
-
-
+.slick-dots li.slick-active button {
+    background-color: #448E43;
+}
+.slick-dots li button {
+   border-color: #448E43;
+   border-radius: 50%;
+   height: 14px;
+}
 
 /* ------End slide */
 /* footer */
