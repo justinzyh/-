@@ -32,15 +32,18 @@
 	background: linear-gradient(#C3ED87, #7DCE85, #C3ED87);
 	color: #FFFFFF;
 }
-.container-fluid,.container{
+
+.container-fluid,
+.container {
 	padding: 0;
 }
+
 /* header */
 .header-wrap {
 	padding: 5px;
 	clear: both;
-	overflow: hidden;
 	color: #333333;
+	position: relative;
 }
 
 .header-wrap .time {
@@ -50,16 +53,74 @@
 
 .header-wrap .about {
 	float: right;
-	margin-right: 15px;
+	cursor: pointer;
+	position: relative;
+}
+
+.header-wrap .about>span {
+	margin-right: 42px;
+}
+
+.header-wrap .about>.about-weixin {
+	z-index: 100;
+	display: none;
+	position: absolute;
+	background: #f1f1f1;
+	right: 0;
+	border-radius: 2px;
+	top: 30px;
+}
+
+.header-wrap .about>.about-weixin:before {
+	content: "";
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid #f1f1f1;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	transform: translateX(-50%);
+	left: 50%;
+	position: absolute;
+	top: -16px;
+}
+
+.header-wrap .about>.about-weixin>img {
+	width: 120px;
+	height: 120px;
+	display: block;
+}
+
+.header-wrap .about>.about-weixin>.barcode-text {
+	text-align: center;
+	font-size: 14px;
+	color: #000000;
+	padding: 3px;
+	background: #FFFFFF;
+}
+
+.header-wrap .about>.about-weixin>.barcode-text>i {
+	display: inline-block;
+	width: 10px;
+	height: 1px;
+	background: #999999;
+	vertical-align: 4px;
+	margin: 0 2px;
+}
+
+.header-wrap .about:hover>.about-weixin {
+	display: block;
 }
 
 /* -----End header */
 /* navbar */
-.zyh-navbar{
+.zyh-navbar {
 	margin: 0;
 	border: none;
 	padding: 0 10px;
 }
+
 .zyh-navbar .navbar-nav>li>a {
 	font-size: 16px;
 	color: #FFFFFF;
@@ -93,8 +154,8 @@
 	background: linear-gradient(#C3ED87, #7DCE85, #C3ED87);
 	/* 标准的语法 */
 }
-
-.zyh-navbar .form-group>input[type="text"]::-webkit-input-placeholder {
+.zyh-navbar .form-group>input[type="text"]:-ms-input-placeholder,
+.zyh-navbar .form-group>input[type="text"]::-moz-placeholder{
 	/* placeholder颜色  */
 	color: #7DCE85;
 	/* placeholder字体大小  */
@@ -102,6 +163,15 @@
 	/* placeholder位置  */
 	text-align: right;
 	vertical-align: middle;
+}
+.zyh-navbar .form-group>input[type="text"]::-webkit-input-placeholder{
+	/* placeholder颜色  */
+	color: #7DCE85;
+	/* placeholder字体大小  */
+	font-size: 24px;
+	/* placeholder位置  */
+	text-align: right;
+	line-height: 22px;
 }
 
 .zyh-dropdown>ul.dropdown-menu {
@@ -134,10 +204,11 @@
 	vertical-align: 0px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
 	.navbar-form .form-group {
-	    margin-bottom: 0px;
+		margin-bottom: 0px;
 	}
+
 	.zyh-navbar .navbar-form button {
 		vertical-align: 0px;
 	}
@@ -147,20 +218,23 @@
 
 /* slide */
 .sliderImg {
-    max-height: 300px;
+	max-height: 300px;
 	padding: 0;
 }
+
 .slick-initialized .slick-slide {
-    overflow: hidden;
+	overflow: hidden;
 	background-color: #f1f1f1;
 }
+
 .slick-dots li.slick-active button {
-    background-color: #448E43;
+	background-color: #448E43;
 }
+
 .slick-dots li button {
-   border-color: #448E43;
-   border-radius: 50%;
-   height: 14px;
+	border-color: #448E43;
+	border-radius: 50%;
+	height: 14px;
 }
 
 /* ------End slide */
