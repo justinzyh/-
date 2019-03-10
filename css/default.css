@@ -1,29 +1,172 @@
-.white-bgc{
+.white-bgc {
 	color: #121212;
 	background-color: #fafafa;
 }
+
+.grad-lr {
+	background: -webkit-linear-gradient(left, #C3ED87, #7DCE85, #448E43);
+	/* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(right, #C3ED87, #7DCE85, #448E43);
+	/* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(right, #C3ED87, #7DCE85, #448E43);
+	/* Firefox 3.6 - 15 */
+	background: linear-gradient(to right, #C3ED87, #7DCE85, #448E43);
+	/* 标准的语法（必须放在最后） */
+}
+
+.zyh-btn-green {
+	background-color: #7DCE85;
+	color: #FFFFFF;
+	border-color: #448E43;
+}
+
+.zyh-btn-green:hover,
+.zyh-btn-green:visited,
+.zyh-btn-green:focus {
+	background: -webkit-linear-gradient(#C3ED87, #7DCE85, #C3ED87);
+	/* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(#C3ED87, #7DCE85, #C3ED87);
+	/* Opera 11.6 - 12.0 */
+	background: -moz-linear-gradient(#C3ED87, #7DCE85, #C3ED87);
+	/* Firefox 3.6 - 15 */
+	background: linear-gradient(#C3ED87, #7DCE85, #C3ED87);
+	color: #FFFFFF;
+}
+.container-fluid,.container{
+	padding: 0;
+}
 /* header */
-.header-wrap{
+.header-wrap {
 	padding: 5px;
 	clear: both;
 	overflow: hidden;
 	color: #333333;
 }
-.header-wrap .time{
+
+.header-wrap .time {
 	float: left;
+	margin-left: 15px;
 }
-.header-wrap .about{
+
+.header-wrap .about {
 	float: right;
+	margin-right: 15px;
 }
+
 /* -----End header */
+/* navbar */
+.zyh-navbar{
+	margin: 0;
+	background: transparent;
+	border: none;
+}
+.zyh-navbar .navbar-nav>li>a {
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+.zyh-navbar .navbar-nav>.active>a,
+.zyh-navbar .navbar-nav>.active>a:focus,
+.zyh-navbar .navbar-nav>.active>a:hover,
+.zyh-navbar .navbar-nav>li>a:hover {
+	color: #FFFFFF;
+	background: -webkit-linear-gradient(#C3ED87, #7DCE85, #C3ED87);
+	/* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(#C3ED87, #7DCE85, #C3ED87);
+	/* Opera 11.6 - 12.0 */
+	background: -moz-linear-gradient(#C3ED87, #7DCE85, #C3ED87);
+	/* Firefox 3.6 - 15 */
+	background: linear-gradient(#C3ED87, #7DCE85, #C3ED87);
+	/* 标准的语法 */
+}
+
+.zyh-navbar .navbar-nav>.open>a,
+.zyh-navbar .navbar-nav>.open>a:focus,
+.zyh-navbar .navbar-nav>.open>a:hover {
+	color: #FFFFFF;
+	background: -webkit-linear-gradient(#C3ED87, #7DCE85, #C3ED87);
+	/* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(#C3ED87, #7DCE85, #C3ED87);
+	/* Opera 11.6 - 12.0 */
+	background: -moz-linear-gradient(#C3ED87, #7DCE85, #C3ED87);
+	/* Firefox 3.6 - 15 */
+	background: linear-gradient(#C3ED87, #7DCE85, #C3ED87);
+	/* 标准的语法 */
+}
+
+.zyh-navbar .form-group>input[type="text"]::-webkit-input-placeholder {
+	/* placeholder颜色  */
+	color: #7DCE85;
+	/* placeholder字体大小  */
+	font-size: 24px;
+	/* placeholder位置  */
+	text-align: right;
+	vertical-align: middle;
+}
+
+.zyh-dropdown>ul.dropdown-menu {
+	padding: 0;
+}
+
+.zyh-dropdown>ul.dropdown-menu>li {
+	padding: 5px 2px;
+}
+
+.zyh-dropdown>ul.dropdown-menu>li:hover>a,
+.zyh-dropdown>ul.dropdown-menu>li:hover {
+	background-color: #7DCE85;
+	color: #FFFFFF;
+}
+
+.zyh-dropdown>ul.dropdown-menu>li.divider {
+	padding: 0;
+	background-color: #448E43;
+	margin: 0;
+}
+
+.zyh-navbar .navbar-collapse,
+.navbar-default .navbar-form {
+	border: none;
+}
+
+.zyh-navbar .navbar-form .form-group {
+	display: inline-block;
+	vertical-align: 0px;
+}
+
+@media (max-width: 767px){
+	.navbar-form .form-group {
+	    margin-bottom: 0px;
+	}
+	.zyh-navbar .navbar-form button {
+		vertical-align: 0px;
+	}
+}
+
+/* ------End navbar */
+
+/* slide */
+.sliderImg {
+    max-height: 300px;
+}
+.slick-initialized .slick-slide {
+    overflow: hidden;
+	background-color: #f1f1f1;
+}
+
+
+
+/* ------End slide */
 /* footer */
-.footer-wrap{
+.footer-wrap {
 	padding: 20px;
 	text-align: center;
 }
+
 .footer-wrap>p {
 	padding: 4px 0;
 }
+
 .footer-wrap>p,
 .footer-wrap>p>span {
 	font-size: 12px;
@@ -33,4 +176,5 @@
 .footer-wrap>p>span {
 	padding: 0 7px;
 }
+
 /* -----End footer------ */
