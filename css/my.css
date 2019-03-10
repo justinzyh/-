@@ -1,3 +1,21 @@
+.zyh-nobg-navbar{
+	margin: 0;
+	border: none;
+	padding: 0 10px;
+}
+.zyh-nobg-navbar .navbar-nav>li>a {
+	font-size: 16px;
+	color: #121212;
+}
+
+.zyh-nobg-navbar .navbar-nav>.active>a,
+.zyh-nobg-navbar .navbar-nav>.active>a:focus,
+.zyh-nobg-navbar .navbar-nav>.active>a:hover,
+.zyh-nobg-navbar .navbar-nav>li>a:hover {
+	color: #FFFFFF;
+	background:#8CD64B;
+}
+
 .my-body {
 	padding: 10px;
 }
@@ -12,7 +30,7 @@
 }
 
 .my-body>.sub-title {
-	padding: 1em 2em;
+	padding: 10px 2px;
 }
 
 .my-body>.sub-title li {

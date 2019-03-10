@@ -124,7 +124,7 @@
 	margin: 0;
 }
 
-.zyh-navbar .navbar-collapse,
+.navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
 	border: none;
 }
