@@ -1,0 +1,104 @@
+.my-body {
+	padding: 10px;
+}
+
+.my-body>.title {}
+
+.my-body>.title>span {
+	font-size: 20px;
+	color: #121212;
+	font-weight: 600;
+	letter-spacing: 3px;
+}
+
+.my-body>.sub-title {
+	padding: 1em 2em;
+}
+
+.my-body>.sub-title li {
+	padding: 5px 0;
+}
+
+.my-body>.sub-title li>span:first-child {
+	color: #999999;
+	font-size: 14px;
+}
+
+.my-body>.sub-title li>span:last-child {
+	color: #121212;
+	font-size: 15px;
+}
+
+.my-body>.content {
+	padding: 5px;
+}
+
+.my-body>.content>p {
+	text-indent: 2em;
+	padding: 3px 0;
+	color: #333333;
+	font-size: 16px;
+	line-height: 28px;
+	letter-spacing: 1px;
+}
+
+.my-body>.content>p>i {
+	color: #999999;
+}
+
+.my-body>.content>p>m {
+	color: #41A863;
+	font-weight: 600;
+}
+
+.my-pic {
+	padding: 20px 0;
+	position: relative;
+}
+
+.my-pic>img {
+	display: block;
+	width: 100%;
+	z-index: -1;
+}
+
+.my-pic>.pic-text {
+	    position: absolute;
+    display: inline-block;
+    background: rgba(0, 0, 0, .3);
+    border-radius: 3px;
+    padding: 3px 8px;
+    font-size: 16px;
+    color: #FFFFFF;
+    right: 0;
+    transform: translateY(-100%);
+    margin: -5px 8px;
+	cursor: pointer;
+}
+
+.my-pic>.pic-text:hover {
+	background: rgba(188, 188, 188, .5);
+}
+.my-list-wrap{
+	padding: 10px;
+}
+.my-list-wrap>.my-list-item{
+	
+}
+.my-list-item>.item-title{
+	font-size: 20px;
+	letter-spacing: 3px;
+	color: #121212;
+	font-weight: 600;
+	border-bottom: 1px solid #F1F1F1;
+	padding: 10px 0;
+}
+.my-list-item>.item-title>i{
+	display:inline-block;
+	vertical-align: -3px;
+	width: 3px;
+	height: 1em;
+	background-color: #41A863;
+	border-radius: 1px;
+	margin-right: 8px;
+}
