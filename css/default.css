@@ -1,0 +1,36 @@
+.white-bgc{
+	color: #121212;
+	background-color: #fafafa;
+}
+/* header */
+.header-wrap{
+	padding: 5px;
+	clear: both;
+	overflow: hidden;
+	color: #333333;
+}
+.header-wrap .time{
+	float: left;
+}
+.header-wrap .about{
+	float: right;
+}
+/* -----End header */
+/* footer */
+.footer-wrap{
+	padding: 20px;
+	text-align: center;
+}
+.footer-wrap>p {
+	padding: 4px 0;
+}
+.footer-wrap>p,
+.footer-wrap>p>span {
+	font-size: 12px;
+	color: #a6a6a6;
+}
+
+.footer-wrap>p>span {
+	padding: 0 7px;
+}
+/* -----End footer------ */
