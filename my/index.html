@@ -8,38 +8,40 @@
 
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="../css/reset.min.css">
-		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="../css/default.css">
+		<link rel="stylesheet" type="text/css" href="../css/header.css">
+		<link rel="stylesheet" type="text/css" href="../css/footer.css">
 		<link rel="stylesheet" type="text/css" href="../css/my.css">
 	</head>
 	<body>
-		<nav class="navbar navbar-default zyh-nobg-navbar">
+		<div class="navbar-wrapper delay black-bgc">
 			<div class="container">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#">
-						<span>小</span>
-						<span>赫</span>
-						<span>兹</span>
-					</a>
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-					 aria-expanded="false">
-						<span class="sr-only">导航</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div>
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="/">主页 <span class="sr-only">(current)</span></a></li>
-						<li><a href="/post">我的动态</a></li>
-						<li  class="active"><a href="#">个人中心</a></li>
-					</ul>
+				<div class="navbar navbar-inverse zyh-navbar-top">
+					<div class="navbar-header zyh-header">
+						<a class="navbar-brand" href="##">
+							<img class="img-responsive" src="../img/header.jpg">
+						</a>
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true"
+						 aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="navbar-collapse collapse navbar-right zyh-collapse">
+						<ul class="nav navbar-nav light-green">
+							<li><a href="#"><span data-hover="空间">空间</span></a></li>
+							<li class="current"><a href="my"><span data-hover="简介">简介</span></a></li>
+							<li><a href="#"><span data-hover="动态">动态</span></a></li>
+							<li><a href="#"><span data-hover="记事本">记事本</span></a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</nav>
-		<div class="container-fluid">
+		</div>
+		<div class="container-fluid mg-top100">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3">
@@ -116,12 +118,95 @@
 			</div>
 		</div>
 
-		<footer class="zyh-container white-bgc footer-wrap">
-			<p>Copyright 2019 www........org.cn All Rights Reserved 个人网页 版权所有 京ICP备？号</p>
-			<p>
-				<span>主办单位：小赫兹工作室</span>
-				<span> 技术支持：小赫兹（前端工程师）</span>
-			</p>
-		</footer>
+		<section class="footer">
+			<h2 class="text-center">你开心就好</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 footer-left">
+						<h4>联系我</h4>
+						<div class="contact-info">
+							<div class="address">
+								<i class="glyphicon glyphicon-globe"></i>
+								<p class="p3">江苏省</p>
+								<p class="p4">南京</p>
+							</div>
+							<div class="phone">
+								<i class="glyphicon glyphicon-phone-alt"></i>
+								<p class="p3">185********</p>
+								<p class="p4">QQ 1476156127</p>
+							</div>
+							<div class="email-info">
+								<i class="glyphicon glyphicon-envelope"></i>
+								<p class="p3"><a href="mailto:tojustinzyh@163.com">tojustinzyh@163.com</a></p>
+								<p class="p4"><a href="http://justinzyh.github.io">http://justinzyh.github.io</a></p>
+							</div>
+						</div>
+					</div><!-- col -->
+					<div class="col-md-4 footer-center">
+						<h4>留言</h4>
+						<p>
+							请仔细填写你的联系方式
+						</p>
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label for="inputEmail1" class="col-lg-5 control-label">昵称</label>
+								<div class="col-lg-10">
+									<input type="text" class="form-control" id="nickname" required="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="text1" class="col-lg-5 control-label">邮箱</label>
+								<div class="col-lg-10">
+									<input type="email" class="form-control" id="nickemail" required="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="text1" class="col-lg-5 control-label" required="">留言</label>
+								<div class="col-lg-10">
+									<textarea cols="20" rows="3" id="nickcontent" class="form-control"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-10">
+									<button type="submit" class="btn-outline">提交</button>
+								</div>
+							</div>
+						</form><!-- form -->
+					</div><!-- col -->
+					<div class="col-md-4 footer-right">
+						<h4>技术支持</h4>
+						<p>
+							感谢以下组织给予技术支持。
+						</p>
+						<ul class="company-info">
+							<li>
+								<a href="##">加勒比海盗</a>
+							</li>
+							<li>
+								<a href="##">蒙古海军</a>
+							</li>
+							<li>
+								<a href="##">大秦帝国</a>
+							</li>
+							<li>
+								<a href="##">罗马帝国</a>
+							</li>
+							<li>
+								<a href="##">小赫兹justinzyh</a>
+							</li>
+						</ul>
+					</div><!-- col -->
+				</div><!-- row -->
+			</div><!-- container -->
+			<div class="copyright">
+				<p>Copyright © test.Company name All rights reserved.<a href="http://justinzyh.github.io">小赫兹zyh</a>（个人网站）</p>
+			</div>
+		</section>
+
+		<!-- js files-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap/bootstrap.min.js"></script>
+		<script src="js/SmoothScroll.min.js"></script>
 	</body>
+
 </html>
