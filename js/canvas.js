@@ -55,7 +55,7 @@ var i = 100,
     w = 2e-4,
     m = window.devicePixelRatio || 1,
     f = 0;
-l.width = window.innerWidth * m, l.height = window.innerHeight * m, u.x = null, u.y = null, r.strokeStyle = "#8738f6", r.translate(.5, .5), window.requestAnimFrame = function() {
+l.width = l.parentNode.offsetWidth, l.height = '583', u.x = null, u.y = null, r.strokeStyle = "#8738f6", r.translate(.5, .5), window.requestAnimFrame = function() {
         return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame ||
             function(e) {
                 window.setTimeout(e, 1e3 / 60)
